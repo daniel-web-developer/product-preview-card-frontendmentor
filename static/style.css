@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-size: 14px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: var(--cream);
+}
+
+.flex {
+  display: flex;
+}
+.flex-justcont-c {
+  justify-content: center;
+}
+.flex-alignitems-c {
+  align-items: center;
+}
+
+.main {
+  height: 100vh;
+}
+.main-box {
+  height: 450px;
+  width: 600px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.main-flex {
+  flex-direction: row;
+}
+.main-img {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+  align-self: center;
+}
+
+.text {
+  width: 300px;
+  padding: 30px;
+}
+.text-tag {
+  font-size: 0.85rem;
+  color: var(--greyb);
+  letter-spacing: 5px;
+}
+.text-title {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 32px;
+}
+.text-desc {
+  font-size: 1rem;
+  color: var(--greyb);
+  line-height: 22px;
+}
+.text-prices {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.text-price {
+  padding: 0 20px 0 0;
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+  color: var(--cyan);
+}
+.text-real {
+  font-size: 0.9rem;
+  color: var(--greyb);
+}
+
+.button {
+  height: 50px;
+  width: 240px;
+  border-radius: 10px;
+  background-color: var(--cyan);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.button img {
+  padding-right: 10px;
+}
+.button p {
+  color: var(--white);
+  font-weight: 700;
+}
+.button:hover {
+  background-color: var(--darkb);
+}
+
+@media screen and (max-width: 375px) {
+  .none-mobile {
+    display: none;
+  }
+  .main-box {
+    width: 340px;
+    height: 615px;
+  }
+  .main-flex {
+    flex-direction: column;
+  }
+  .main-img {
+    width: 340px;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+  }
+  .text {
+    width: 340px;
+    padding: 25px;
+  }
+  .text-title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: "Fraunces", serif;
+    font-size: 2.2rem;
+    line-height: 30px;
+  }
+  .text-desc {
+    font-size: 1rem;
+    color: var(--greyb);
+    line-height: 24px;
+  }
+  .text-prices {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .button {
+    width: 290px;
+  }
+  .button img {
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .none-desktop {
+    display: none;
+  }
+}
+:root {
+  --cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --darkb: hsl(212, 21%, 14%);
+  --greyb: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */
